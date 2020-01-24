@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     loadContact()
     loadHome()
+    loadApi()
 });
 
 
@@ -14,5 +15,13 @@ function loadContact(){
 function loadHome(){
     $("#home").click(function () {
         $("#main-conatainer").load('contend/homecontend.html');
+    })
+}
+
+
+
+function loadApi(){
+    $("#api").click(function () {
+        $("#main-conatainer").load('contend/apiTest.html');
     })
 }
